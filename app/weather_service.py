@@ -97,6 +97,7 @@ def format_hour(dt_str):
     return dt.strftime("%H:%M") #> "13:00"
 
 
+
 if __name__ == "__main__":
 
     print(f"RUNNING THE WEATHER SERVICE IN {APP_ENV.upper()} MODE...")
