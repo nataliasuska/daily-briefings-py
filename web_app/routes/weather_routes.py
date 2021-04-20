@@ -1,8 +1,10 @@
-from flask import Blueprint, jsonify
+# web_app/routes/weather_routes.py
 
-weather_routes = Blueprint("weaher_routes", __name__)
+from flask import Blueprint, request, jsonify
 
+from app.weather_service import get_hourly_forecasts
 
+weather_routes = Blueprint("weather_routes", __name__)
 
 @weather_routes.route("/weather/forecast.json")
 def weather_forecast_api():
