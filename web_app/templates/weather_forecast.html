@@ -12,7 +12,7 @@
     <!-- TODO: consider adding images using the provided icon urls -->
     <ul>
     {% for forecast in results["hourly_forecasts"] %}
-        <li>{{ forecast["timestamp"] }} | {{ forecast["temp"] }} | {{ forecast["conditions"].upper() }}</li>
+        <li>{{ forecast["icon"] }} | {{ forecast["timestamp"] }} | {{ forecast["temp"] }} | {{ forecast["conditions"].upper() }}</li>
     {% endfor %}
     </ul>
 
